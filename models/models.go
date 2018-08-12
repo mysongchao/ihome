@@ -199,7 +199,7 @@ func init() {
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 
 	// set default database
-	orm.RegisterDataBase("default", "mysql", "root:1@tcp("+utils.G_mysql_addr+":"+utils.G_mysql_port+")/hellobeego?charset=utf8", 30)
+	orm.RegisterDataBase("default", "mysql", "root:1@tcp("+utils.G_mysql_addr+":"+utils.G_mysql_port+")/ilhome?charset=utf8", 30)
 
 	//注册model
 	orm.RegisterModel(new(User), new(House), new(Area), new(Facility), new(HouseImage), new(OrderHouse))
